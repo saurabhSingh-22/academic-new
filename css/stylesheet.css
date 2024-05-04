@@ -1,0 +1,11 @@
+footer .footer-logo img {
+  width: 114px;
+}
+
+header .navbar-brand img {
+  max-height: 90px;
+}
+
+header .navbar-brand {
+  padding: 5px 0px;
+}
