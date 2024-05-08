@@ -12,3 +12,146 @@ header .navbar-brand {
 .blog-image{
   height: 460px;
 }
+
+
+/* CSS FOR SLIDING */
+
+.slider-stage {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider-stage .slider-item-bulb img {
+  position: absolute;
+  max-width: 130px;
+  right: 30%;
+  bottom: 48%;
+  filter: opacity(0.9);
+  animation: zoom-in 3s ease infinite;
+}
+
+.slider-stage .slider-item-men img {
+  position: absolute;
+  max-width: 100px;
+  right: 58%;
+  bottom: 49%;
+  filter: opacity(0.9);
+}
+
+.slider-stage .slider-item-text {
+  position: absolute;
+  bottom: 62%;
+  width: 100%;
+}
+
+.slider-stage .slider-item-text h2.top-slider-text {
+  margin-left: 0;
+  font-size: 50px;
+  margin-bottom: 12px;
+}
+
+.slider-stage .slider-item-text h1 {
+  margin-left: 10%;
+  font-weight: 600;
+  font-size: 5.5rem;
+  text-shadow: 1px 2px 3px #ccc;
+  margin-bottom: 18px;
+}
+
+.slider-stage .slider-item-text h2.bottom-slider-text {
+  margin-left: 45%;
+  font-size: 50px;
+}
+
+
+.slider-stage .slider-item-text h1 span.base-one-color {
+  color: var(--base-color);
+}
+
+.slider-stage .slider-item-text h1 span.base-two-color {
+  color: #0092D5;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .slider-stage .slider-item-text {
+    bottom: 80%;
+  }
+
+  .slider-stage .slider-item-text h1 {
+    font-size: 2.8rem;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .slider-stage .slider-item-text h2.top-slider-text {
+    font-size: 2rem;
+    margin-bottom: 4px;
+  }
+
+  .slider-stage .slider-item-text h2.bottom-slider-text {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .slider-stage .slider-item-bulb img {
+    max-width: 90px;
+    right: 6%;
+    bottom: 72%;
+  }
+
+  .slider-stage .slider-item-men img {
+    max-width: 78px;
+    right: 47%;
+    bottom: 69%;
+  }
+}
+
+@media only screen and (max-width:1199px) {
+  .slider-stage .slider-item-text {
+    bottom: 80%;
+  }
+
+  .slider-stage .slider-item-text h1 {
+    font-size: 2.8rem;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .slider-stage .slider-item-text h2.top-slider-text {
+    font-size: 2rem;
+    margin-bottom: 4px;
+  }
+
+  .slider-stage .slider-item-text h2.bottom-slider-text {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .slider-stage .slider-item-bulb img {
+    max-width: 90px;
+    right: 6%;
+    bottom: 72%;
+  }
+
+  .slider-stage .slider-item-men img {
+    max-width: 78px;
+    right: 47%;
+    bottom: 69%;
+  }
+}

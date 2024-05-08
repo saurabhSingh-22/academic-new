@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/vendors.min.css" />
   <link rel="stylesheet" href="css/icon.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/responsive.min.css" />
   <link rel="stylesheet" href="demos/finance/finance.css" />
   <link rel="stylesheet" href="css/stylesheet.css" />
@@ -124,32 +125,34 @@
   <section class="p-0 bg-dark-gray">
     <div
       class="swiper full-screen md-h-600px sm-h-500px ipad-top-space-margin swiper-light-pagination swiper-pagination-style-3"
-      data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;pagination&quot;: { &quot;el&quot;: &quot;.swiper-pagination-bullets&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;stopOnLastSlide&quot;: true, &quot;disableOnInteraction&quot;: false },&quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;fade&quot; }">
+      data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;pagination&quot;: { &quot;el&quot;: &quot;.swiper-pagination-bullets&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;autoplay&quot;: { &quot;delay&quot;: 6000, &quot;stopOnLastSlide&quot;: true, &quot;disableOnInteraction&quot;: false },&quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;fade&quot; }">
       <div class="swiper-wrapper">
 
         <div class="swiper-slide">
           <div class="position-absolute left-0px top-0px w-100 h-100 cover-background"
-            style="background-image:url('images/my-images/picture3.jpg');"
-            data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [1,1], &quot;scale&quot;: [1,1.1], &quot;duration&quot;: 7000, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+            style="background-image:url('images/my-images/slider-bg-1.png');"
+            data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [1,1], &quot;scale&quot;: [1,1], &quot;duration&quot;: 40000, &quot;delay&quot;: 12000, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
           </div>
-          <div class="opacity-light bg-gradient-black-dark-brown"></div>
+
           <div class="container h-100">
-            <div class="row align-items-center h-100 justify-content-center">
-              <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 position-relative text-white text-center">
-                <div class="d-inline-block position-relative mb-35px"
-                  data-anime="{ &quot;opacity&quot;: [0, 1], &quot;easing&quot;: &quot;easeOutCubic&quot;, &quot;duration&quot;: 500, &quot;delay&quot;: 200 }">
-                  <!-- <span class="d-inline-block fw-400 text-white fs-22 mb-0">Professional finance consultant</span> -->
-                  <span
-                    class="h-1px opacity-3 w-100 bg-white d-inline-block transform-origin-left position-absolute bottom-0px left-0px"></span>
-                </div>
-                <div
-                  class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large"
-                  data-fancy-text="{ &quot;opacity&quot;: [0, 1], &quot;translateY&quot;: [50, 0], &quot;string&quot;: [&quot;Industry and Academy world can connect&quot;], &quot;duration&quot;: 500, &quot;delay&quot;: 200, &quot;speed&quot;: 10, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                </div>
-                <a href="#" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge"
-                  data-anime="{ &quot;opacity&quot;: [0, 1], &quot;easing&quot;: &quot;easeOutCubic&quot;, &quot;delay&quot;: 800, &quot;duration&quot;: 800 }">Get
-                  started now</a>
+            <div class="slider-stage">
+              <div class="slider-item-text">
+                <h2 class="top-slider-text" data-aos="fade-right" data-aos-duration="300" data-aos-delay="1000">
+                  A platform where</h2>
+                <h1 data-aos="fade-right" data-aos-duration="300" data-aos-delay="1500"><span
+                    class="base-one-color">Industry</span> & <span class="base-two-color">Academic</span></h1>
+                <h2 class="bottom-slider-text" data-aos="fade-right" data-aos-duration="300" data-aos-delay="2000">World
+                  can connect</h2>
               </div>
+              <div class="slider-item-bulb">
+                <img src="images/my-images/slider-bulb.png" alt="bulb-img" data-aos="zoom-in" data-aos-duration="1200"
+                  data-aos-delay="2500" />
+              </div>
+              <div class="slider-item-men">
+                <img src="images/my-images/slider-user.png" alt="bulb-user" data-aos="fade-right"
+                  data-aos-duration="1600" data-aos-delay="100" />
+              </div>
+
             </div>
           </div>
         </div>
@@ -227,8 +230,7 @@
     </div>
   </section>
 
-  <section class="big-section overflow-visible cover-background sm-background-image-none"
-    style="background-image:url('images/my-images/demo-finance-bg-01.jpg');">
+  <section class="big-section overflow-visible cover-background sm-background-image-none">
     <div class="container">
       <div
         class="row row-cols-1 row-cols-lg-4 row-cols-md-2 justify-content-center overlap-section z-index-1 overlap-section-three-fourth"
@@ -313,7 +315,7 @@
       </div>
 
       <div class="row align-items-center mt-10">
-        <div class="col-xl-6 col-lg-7 col-md-9"
+        <div class="col-xl-6 col-lg-6 col-md-6"
           data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
           <h1 class="alt-font fw-600 ls-minus-2px text-dark-gray">Connect Industry to Academics</h1>
           <div class="mb-7">
@@ -352,6 +354,9 @@
               us</a>
           </div>
         </div>
+        <div class="col-xl-6 col-lg-6 col-md-6">
+          <img src="images/my-images/picture1.jpg" class="img-fluid" alt="about-image"/>
+        </div>
       </div>
 
     </div>
@@ -360,141 +365,9 @@
 
   <section class="bg-very-light-gray overflow-hidden">
     <div class="container">
-      <div class="row justify-content-center mb-2">
-        <div class="col-lg-7 text-center"
-          data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-          <span class="fs-17 d-inline-block fw-500 text-uppercase text-base-color ls-1px">Professional services</span>
-          <h1 class="alt-font text-dark-gray fw-600 ls-minus-1px">Our Services</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 position-relative">
-          <div class="outside-box-right-50 md-outside-box-right-70 sm-outside-box-right-0"
-            data-anime="{ &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 250, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-            <div class="swiper ps-30px pe-30px sm-ps-0 sm-pe-0"
-              data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 35, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 3000, &quot;disableOnInteraction&quot;: false },  &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-1&quot;, &quot;clickable&quot;: true, &quot;dynamicBullets&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 2, &quot;spaceBetween&quot;: 50 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2, &quot;spaceBetween&quot;: 40 }, &quot;320&quot;: { &quot;slidesPerView&quot;: 1 } }, &quot;effect&quot;: &quot;slide&quot; }">
-              <div class="swiper-wrapper pt-30px pb-30px">
-
-                <div class="swiper-slide">
-                  <div class="row g-0 services-box-style-02">
-                    <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
-                      <div class="services-box-icon">
-                        <i class="line-icon-Basket-Coins icon-extra-large text-base-color mb-25px"></i>
-                      </div>
-                      <div class="services-box-content">
-                        <a href="#" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">Industry
-                          knowledge</a>
-                        <p class="sm-mb-15px">Lorem ipsum consetetur adipicing elit eiusmod tempor incididunt.</p>
-                        <a href="#" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 services-box-img xs-h-300px">
-                      <div class="h-100 cover-background" style="background-image: url(images/my-images/picture1.jpg)">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="swiper-slide">
-                  <div class="row g-0 services-box-style-02">
-                    <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
-                      <div class="services-box-icon">
-                        <i class="line-icon-Coins icon-extra-large text-base-color mb-25px"></i>
-                      </div>
-                      <div class="services-box-content">
-                        <a href="#" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">Connect
-                          academic</a>
-                        <p class="sm-mb-15px">Lorem ipsum consetetur adipicing elit eiusmod tempor incididunt.</p>
-                        <a href="#" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 services-box-img xs-h-300px">
-                      <div class="h-100 cover-background" style="background-image: url(images/my-images/picture7.jpg)">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="swiper-slide">
-                  <div class="row g-0 services-box-style-02">
-                    <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
-                      <div class="services-box-icon">
-                        <i class="line-icon-Bar-Chart3 icon-extra-large text-base-color mb-25px"></i>
-                      </div>
-                      <div class="services-box-content">
-                        <a href="#" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">Strategic
-                          planning</a>
-                        <p class="sm-mb-15px">Lorem ipsum consetetur adipicing elit eiusmod tempor incididunt.</p>
-                        <a href="#" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 services-box-img xs-h-300px">
-                      <div class="h-100 cover-background" style="background-image: url(images/my-images/picture8.jpg)">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="swiper-slide">
-                  <div class="row g-0 services-box-style-02">
-                    <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
-                      <div class="services-box-icon">
-                        <i class="line-icon-Archery-2 icon-extra-large text-base-color mb-25px"></i>
-                      </div>
-                      <div class="services-box-content">
-                        <a href="#" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">Financial
-                          help</a>
-                        <p class="sm-mb-15px">Lorem ipsum consetetur adipicing elit eiusmod tempor incididunt.</p>
-                        <a href="#" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 services-box-img xs-h-300px">
-                      <div class="h-100 cover-background" style="background-image: url(images/my-images/picture11.jpg)">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="row g-0 services-box-style-02">
-                    <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
-                      <div class="services-box-icon">
-                        <i class="line-icon-Coins icon-extra-large text-base-color mb-25px"></i>
-                      </div>
-                      <div class="services-box-content">
-                        <a href="#" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">Wealth
-                          management</a>
-                        <p class="sm-mb-15px">Lorem ipsum consetetur adipicing elit eiusmod tempor incididunt.</p>
-                        <a href="#" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 services-box-img xs-h-300px">
-                      <div class="h-100 cover-background" style="background-image: url(images/my-images/picture10.jpg)">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="big-section">
-    <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-lg-6 md-mb-15 xs-mb-22 position-relative"
           data-anime="{ &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1000, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-          <div class="overflow-hidden position-relative top-minus-25px lg-top-minus-0px">
-            <img class="w-100" src="images/my-images/picture8.jpg" alt>
-          </div>
           <div class="position-absolute right-15px bottom-minus-20px w-60" data-bottom-top="transform: translateY(50px)"
             data-top-bottom="transform: translateY(-50px)">
             <img class="w-100" src="images/my-images/picture2.jpg" alt>
@@ -798,27 +671,26 @@
         <div class="col-6 col-xl-2 col-lg-3 col-md-4 offset-xl-1 order-1 order-lg-2">
           <span class="alt-font fw-500 fs-20 d-block text-dark-gray mb-10px">Company</span>
           <ul>
-            <li><a href="#">About company</a></li>
-            <li><a href="#">Company expertise</a></li>
-            <li><a href="#">Creative people</a></li>
-            <li><a href="#">Pricing plans</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Blogs</a></li>
           </ul>
         </div>
 
 
-        <div class="col-6 col-xl-2 col-lg-3 col-md-4 order-2 order-lg-3">
+        <div class="col-6 col-xl-3 col-lg-3 col-md-4 order-2 order-lg-3">
           <span class="alt-font fw-500 fs-20 d-block text-dark-gray mb-10px">Customer</span>
           <ul>
-            <li><a href="#">Company services</a></li>
-            <li><a href="#">Company story</a></li>
-            <li><a href="#">Latest news</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Connect with academics</a></li>
+            <li><a href="#">Connect with industry</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
         </div>
 
 
         <div
-          class="col-lg-3 col-md-4 col-sm-6 offset-xl-1 order-3 order-lg-4 order-md-3 order-sm-4 sm-mt-35px xs-mt-25px text-center text-sm-start">
+          class="col-lg-3 col-md-4 col-sm-6 order-3 order-lg-4 order-md-3 order-sm-4 sm-mt-35px xs-mt-25px text-center text-sm-start">
           <span class="alt-font fw-500 fs-20 d-block text-dark-gray mb-10px">Subscribe newsletter</span>
           <p class="mb-30px md-mb-20px sm-mb-15px">Subscribe our newsletter to get the latest news and updates.</p>
           <div class="d-inline-block w-100 newsletter-style-02 position-relative">
@@ -850,7 +722,23 @@
   <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/vendors.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script>
+    AOS.init();
+    /**
+     * Animation on scroll function and init
+     */
+    // function aosInit() {
+    //   AOS.init({
+    //     duration: 600,
+    //     easing: 'ease-in-out',
+    //     once: true,
+    //     mirror: false
+    //   });
+    // }
+    // window.addEventListener('load', aosInit);
+  </script>
 </body>
 
 </html>
