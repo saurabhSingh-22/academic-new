@@ -159,3 +159,67 @@ header .navbar-brand {
     bottom: 69%;
   }
 }
+
+/* -------------- card csss --------------------- */
+.card-intro-data {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: var(--white);
+  box-shadow: 4px 4px 16px 1px #ccc;
+}
+@media only screen and (max-width:767px) {
+  .card-intro-data{
+    margin-bottom: 20px;
+  }
+}
+
+.card-intro-data .img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-intro-data .img-wrapper::after {
+  content: "";
+  width: 100%;
+  display: block;
+  padding-bottom: 74%;
+}
+
+.card-intro-data .img-wrapper img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+.card-intro-data .text-wrapper {
+  padding: 14px;
+  text-align: center;
+}
+
+.card-intro-data .text-wrapper h4 {
+  font-size: 18px;
+  color: var(--dark-gray);
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.card-intro-data .text-wrapper p {
+  color: var(--base-color);
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.second-section {
+  min-height: 100vh;
+}
+
