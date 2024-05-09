@@ -12525,13 +12525,13 @@ blockquote footer {
 }
 
 .btn.btn-dark-gray {
-  background-color: var(--dark-gray);
+  background-color: var(--base-color);
   color: var(--white)
 }
 
 .btn.btn-dark-gray:active,
 .btn.btn-dark-gray:hover {
-  background-color: transparent;
+  background-color: var(--crusoe-green);
   border-color: var(--dark-gray);
   color: var(--dark-gray)
 }
